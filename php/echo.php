@@ -4,11 +4,11 @@ function echotest()
 {
   for($i=0;$i<func_num_args();$i++)
   {
-    $arg = func_get_arg($i);
-    echo "$arg";
+    $argc = func_get_arg($i);
+    echo "$argc";
   }
 }
 
 echotest();
-//echotest('bla');
+echotest('bla');
 echotest('foo', 'bar', 'baz');
