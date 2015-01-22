@@ -1,14 +1,14 @@
 <?php
 
-function echo()
+function echotest()
 {
   for($i=0;$i<func_num_args();$i++)
   {
     $arg = func_get_arg($i);
-    echo"<script>console.log('$arg')</script>";
+    echo "$arg";
   }
 }
 
-echo();
-echo('bla');
-echo('foo', 'bar', 'baz');
+echotest();
+//echotest('bla');
+echotest('foo', 'bar', 'baz');
